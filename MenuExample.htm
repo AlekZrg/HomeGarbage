@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Tabs</title>
+  <style type="text/css">
+  .tabs input[type=radio] {
+  display: none;}
+  
+  .tabs, .tab_title {
+  display: inline-block;
+  }
+  
+  .tab_title {
+  padding: 5px;
+  border: 1px solid gray;
+  margin-right: -5px;
+  border-radius: 10px 10px 0px 0px;
+  }
+  
+  .tab_content {
+  display: none;
+  position: absolute;
+  left: 8px;
+  border: 1px solid blue;
+  padding: 10px;
+  width: 75%;
+  height: 75%;
+  }
+  
+  .tabs :checked ~ .tab_content {
+  display: block;
+  }
+  
+  .tabs :checked ~ .tab_title {
+  background-color: white;
+  border: 1px solid blue;
+  border-radius: 10px 10px 0px 0px;
+  border-bottom: none;
+  position: relative;
+  top: 1px;
+  z-index: 1;
+  }
+
+  </style>
+ </head>
+ <body>
+<div>
+	<div class="tabs">
+	<input type="radio" id="tab1" name="tab_group">
+	<label for="tab1" class="tab_title" style="border-radius: 0 10px 0 0;">Title first</label>
+	<div class="tab_content">Text for first tab</div>
+	</div>
+	
+	<div class="tabs">
+	<input type="radio" id="tab2" name="tab_group">
+	<label for="tab2" class="tab_title">Title second</label>
+	<div class="tab_content">Text for second tab</div>
+	</div>
+	
+	<div class="tabs">
+	<input type="radio" id="tab3" name="tab_group">
+	<label for="tab3" class="tab_title">Title third</label>
+	<div class="tab_content">Text for third tab</div>
+	</div>
+</div>
+ </body>
+</html>

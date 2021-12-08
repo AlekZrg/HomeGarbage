@@ -1,0 +1,213 @@
+html, body {margin: 0; padding: 0; height: 100%; width: 100%;}
+
+body {
+	box-sizing: border-box;
+	font-family: 'Noto Sans Display';
+	color: #474747;
+	}
+	
+.clearfix_container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.clearfix_container {
+	height: calc(100% - 130px);
+	}
+
+div.MainBox {
+	width: 1400px;
+	height: 100%;
+	min-height: 600px;
+	margin: 0 auto;
+	padding: 0;
+	background-color: #e6e6e6;
+	}
+div.inner_header {
+	height: 50px;
+	border: 0px solid black;
+	line-height: 50px;
+	text-align: right;
+	margin-right: 25px;
+	}	
+div.MenuBG {
+	width: 100%;
+	height: 45px;
+	background-color: #f6f8f3;
+	text-align: right;
+	}
+div.MenuButtons {
+	display: inline-block;
+	font-weight: bold;
+	font-size: 24px;
+	//border: 1px solid red;
+	}
+a.Menubuttons {
+	color: #474747;
+	position: relative;
+	top: 6px;
+	padding: 6px 20px;
+	text-decoration: none;
+	width: 100%;
+	//border: 1px solid black;
+	}
+a.Menubuttons:hover {
+	background-color: #69884d;
+	Color: #e6e6e6;
+	}
+div.WalletsPreview {
+	float: left;
+	display: inline-block;
+	margin: 25px 0px 0px 25px;
+	width: 335px;
+	height: calc(100% - 30px);
+	//height: calc(100% - 200px);
+	background-color: #f6f8f3;
+	}
+span.WalletsPreview {
+	position: relative;
+	top: 10px;
+	left: 10px;
+	font-size: 22px;
+	font-weight: bold;
+	}
+table.ListOfWalletsOnPreview {
+	margin: 0px 0 0px 15px;
+	font-size: 16px;
+	font-weight: bold;
+	}
+	
+table.ListOfCurrencyOnPreview {
+	margin: 15px 0 0px 15px;
+	font-size: 16px;
+	font-weight: bold;
+	}
+
+td.WalletName {
+	width: 180px;
+	}
+	
+td.Total {
+	text-align: right;
+	color: #950000;
+	font-size: 18px;
+	}
+div.MainWindow {
+	float: left;
+	display: inline-block;
+	margin: 25px 0px 0px 25px;
+	width: 1000px;
+	height: calc(100% - 30px);
+	//height: auto;
+	min-height: 400px;
+	background-color: #f6f8f3;
+	}
+section.MainWindow {
+	position: relative;
+	height: 100%;
+	top: 25px;
+	left: 25px;
+	}
+	
+.footer {
+	text-align: center;
+	border: 0px solid black;
+	}
+	
+div.addWalletOnPreview
+	{
+	text-align: right;
+	}
+div.addWalletOnPreview img
+	{
+	vertical-align: top;
+	}
+div.addWalletOnPreview a
+	{
+	color: #474747;
+	text-decoration: none;
+	}
+div.addWalletOnPreview a:hover
+	{
+	color: #ae5200;
+	text-decoration: none;
+	}
+div.setting_window {
+	height: 100%;
+	overflow-y: scroll;
+	}
+	/* ������� � ��������� � ����������
+.expenses:nth-child(odd) {
+	background-color: #7ea345;
+	}
+.expenses:nth-child(even) {
+	background-color: #d8d8d6;
+	}
+table.list_of_expenses {
+	margin-left: 15px;
+	margin-top: 10px;
+	}*/
+div.list_of_expenses {
+	display: inline-block; 
+	min-width: 180px;
+	margin: 0px;
+	padding: 0px;
+	}
+div.alt_color:nth-child(2n+1) {
+  background-color: #7ea345;
+}
+div.alt_color:nth-child(2n+2) {
+  background-color: #d8d8d6;
+}
+div.alt_color_check:nth-child(2n+1) {
+  background-color: #d8d8d6;
+}
+div.alt_color_check:nth-child(2n+2) {
+  background-color: #7ea345;
+}
+a.set_expenses_func_link {
+	margin-right: 15px;
+	text-decoration: none;
+	}
+a.set_expenses_func_link:visited {
+	color: blue;
+	}
+a.set_expenses_func_link:hover {
+		 color: #ae5200;
+	 }
+.add_op_window {
+	margin: 15px 0 15px;
+	font-size: 16px;
+}
+.add_op_window input, select {
+	font-size: 14px;
+	padding: 3px;
+}
+.add_op_fields {
+	display: inline-block;
+	width: 150px;
+	padding: 5px;
+}
+.op_show {
+	padding: 5px;
+	color: black;
+}
+.op_show span {
+	display: inline-block;
+}
+.op_show_span1 {
+	width: 100px;
+}
+.op_show_span2 {
+	width: 170px;
+}
+.op_show_span3 {
+	width: 200px;
+}
+.op_show_span4 {
+	width: 130px;
+}
+.op_show_span6 {
+	width: calc(100% - 100px - 170px - 200px - 150px - 10px);
+}
